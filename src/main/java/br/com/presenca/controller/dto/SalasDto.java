@@ -2,9 +2,6 @@ package br.com.presenca.controller.dto;
 
 import br.com.presenca.modelo.Salas;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class SalasDto {
 
     private Integer id;

@@ -1,14 +1,16 @@
 package br.com.presenca.controller;
 
+import br.com.presenca.repository.AulasRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/reservas")
+@RequestMapping("/listaDePresenca")
 public class ListaController {
 
-//	@Autowired
-//	private AgendamentoRepository agendamentoRepository;
+	@Autowired
+	private AulasRepository aulasRepository;
 //	@Autowired
 //	private EspacoRepository espacoRepository;
 //	@Autowired

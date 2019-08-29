@@ -15,22 +15,15 @@ public class Salas implements Serializable {
     @Column(name = "NOME")
     private String nome;
 
-    public Salas() {
-    }
+    @Column(name = "N_SALA")
+    private Integer numero;
 
-
-
-    public Salas(String nome) {
-        this.nome = nome;
-    }
-
-    public Salas(Salas salas) {
-        this.id = salas.getId();
-        this.nome = salas.getNome();
-    }
-
-    public int getId() {
+    public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -39,5 +32,21 @@ public class Salas implements Serializable {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Integer getNumero() {
+        return numero;
+    }
+
+    public void setNumero(Integer numero) {
+        this.numero = numero;
+    }
+
+    public Salas() {
+    }
+
+    public Salas(String nome, Integer numero) {
+        this.nome = nome;
+        this.numero = numero;
     }
 }
